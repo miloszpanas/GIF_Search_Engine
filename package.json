@@ -23,7 +23,7 @@
     "sweetalert2": "^7.18.0"
   },
   "scripts": {
-	"start": "http-server",
+	  "start": "http-server",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "init:dirs": "mkdirp sass css js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
