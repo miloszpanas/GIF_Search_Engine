@@ -1,0 +1,47 @@
+{
+  "name": "new-js.project",
+  "version": "1.0.0",
+  "description": "https://miloszpanas.github.io/learning-git-2/",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-standalone": "^6.26.0"
+  },
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.23.6",
+    "glob-run": "^0.1.6",
+    "globstar": "^1.0.0",
+    "http-server": "^0.11.1",
+    "jshint": "^2.9.5",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "nu-html-checker": "^0.1.0",
+    "onchange": "^3.3.0",
+    "rimraf": "^2.6.2",
+    "sweetalert2": "^7.18.0"
+  },
+  "scripts": {
+	"start": "http-server",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+    "init:dirs": "mkdirp sass css js",
+    "init:files": "touch README.md index.html sass/style.scss js/script.js",
+    "startproject": "npm-run-all init:dirs init:files init:gitignore",
+    "go-live": "node_modules/.bin/browser-sync start --server --files css/*.css *.html js/*.js *.js",
+    "init:sass": "node-sass --output-style nested --source-map true -o css sass --watch",
+    "dev": "npm-run-all -p init:sass go-live",
+    "GIF-start": "npm-run-all -p start go-live"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miloszpanas/learning-git-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miloszpanas/learning-git-2/issues"
+  },
+  "homepage": "https://github.com/miloszpanas/learning-git-2#readme"
+}
