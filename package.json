@@ -30,8 +30,7 @@
     "startproject": "npm-run-all init:dirs init:files init:gitignore",
     "go-live": "node_modules/.bin/browser-sync start --server --files css/*.css *.html js/*.js *.js",
     "init:sass": "node-sass --output-style nested --source-map true -o css sass --watch",
-    "dev": "npm-run-all -p init:sass go-live",
-    "GIF-start": "npm-run-all -p start go-live"
+    "dev": "npm-run-all -p init:sass go-live"
   },
   "repository": {
     "type": "git",
