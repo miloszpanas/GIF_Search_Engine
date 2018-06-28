@@ -1,0 +1,11 @@
+@media(min-width: 320px) and (max-width: 767px) {
+    html {
+        font-size: 13px;
+    }
+    #app {
+        margin-top: 3em;
+    }
+    .appWrapper p {
+        margin-top: 1.3em;
+    }
+}

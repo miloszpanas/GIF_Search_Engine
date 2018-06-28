@@ -57,7 +57,7 @@ App = React.createClass({
         }
 
         return (
-          <div style={styles}>
+          <div style={styles} className={'appWrapper'}>
                 <h1 style={styles_for_h}>GIF Search Engine!</h1>
                 <p style={styles_for_p}>Find GIFs on <a href='http://giphy.com'>Giphy</a>. Press enter for more GIFs.</p>
                 <Search onSearch={this.handleSearch}/>
