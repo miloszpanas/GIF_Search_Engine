@@ -27,7 +27,7 @@ Search = React.createClass({
                  type="text"
                  onChange={this.handleChange}
                  onKeyUp={this.handleKeyUp}
-                 placeholder="Enter the searched phrase here"
+                 placeholder="Type here, Miss"
                  style={styles}
                  value={this.state.searchTerm}
                 />
