@@ -1,6 +1,8 @@
 @media(min-width: 320px) and (max-width: 767px) {
     html {
         font-size: 13px;
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 1px;
     }
     #app {
         margin-top: 3em;
@@ -8,4 +10,13 @@
     .appWrapper p {
         margin-top: 1.3em;
     }
+}
+
+html {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+#app {
+    margin-top: 3em;
 }
