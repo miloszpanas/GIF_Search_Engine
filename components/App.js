@@ -48,10 +48,18 @@ App = React.createClass({
             width: '90%'
         };
 
+        var styles_for_h = {
+            fontSize: '2.5em'
+        };
+
+        var styles_for_p = {
+            fontSize: '1.6em'
+        }
+
         return (
           <div style={styles}>
-                <h1>GIF Search Engine!</h1>
-                <p>Find GIFs on <a href='http://giphy.com'>Giphy</a>. Press enter for more GIFs.</p>
+                <h1 style={styles_for_h}>GIF Search Engine!</h1>
+                <p style={styles_for_p}>Find GIFs on <a href='http://giphy.com'>Giphy</a>. Press enter for more GIFs.</p>
                 <Search onSearch={this.handleSearch}/>
                 <Gif
                     loading={this.state.loading}
